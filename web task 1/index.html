@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <h1 class="centered-heading">My Image gallery</h1>
+        <main>
+
+            <div class="gallery">
+                <div class="gallery-item" onclick="openModal(0)">
+                    <img src="./image.jpg" alt="No image">
+                </div>
+                <div class="gallery-item" onclick="openModal(1)">
+                    <img src="./image_2.jpg" alt="No image">
+                </div>
+                <div class="gallery-item" onclick="openModal(2)">
+                    <img src="./image_3.jpg" alt="No image">
+                </div>
+                 <div class="gallery-item" onclick="openModal(3)">
+                    <img src="./image_4.jpg" alt="No image">
+                </div>
+                 <div class="gallery-item" onclick="openModal(4)">
+                    <img src="./image_5.jpg" alt="No image">
+                </div>
+                 <div class="gallery-item" onclick="openModal(5)">
+                    <img src="./image_6.jpg" alt="No image">
+                </div>
+                 <div class="gallery-item" onclick="openModal(6)">
+                    <img src="./image_7.jpg" alt="No image">
+                </div>
+                 <div class="gallery-item" onclick="openModal(7)">
+                    <img src="./image_8.jpg" alt="No image">
+                </div>
+            </div>
+            <div id="modal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                    <div class="modal-left">
+                        <img id="modal-img" src="" alt="Modal Image">
+                    </div>
+                    <div class="modal-right">
+                        <p id="modal-text"></p>
+                        <button class="nav-btn" onclick="prevImage()">&#9664;</button>
+                        <button class="nav-btn" onclick="nextImage()">&#9654;</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="main.js"></script>
+    </body>
+</html>
